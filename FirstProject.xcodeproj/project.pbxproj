@@ -14,6 +14,8 @@
 		E711719227C3769A00563D1C /* MoreMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E711719127C3769A00563D1C /* MoreMeViewController.swift */; };
 		E711719527C3783800563D1C /* CellofMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E711719427C3783800563D1C /* CellofMusic.swift */; };
 		E711719A27C3A39E00563D1C /* CellOfFavouriteMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E711719927C3A39E00563D1C /* CellOfFavouriteMusic.swift */; };
+		E711719D27C3FFB400563D1C /* CellOfMusicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E711719C27C3FFB400563D1C /* CellOfMusicViewModel.swift */; };
+		E71171A027C3FFD400563D1C /* CellOfFavouriteMusicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E711719F27C3FFD400563D1C /* CellOfFavouriteMusicViewModel.swift */; };
 		E7611F7E27C119F100EB645A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7611F7D27C119F100EB645A /* AppDelegate.swift */; };
 		E7611F8027C119F100EB645A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7611F7F27C119F100EB645A /* SceneDelegate.swift */; };
 		E7611F8227C119F100EB645A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7611F8127C119F100EB645A /* MainViewController.swift */; };
@@ -34,6 +36,8 @@
 		E711719127C3769A00563D1C /* MoreMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreMeViewController.swift; sourceTree = "<group>"; };
 		E711719427C3783800563D1C /* CellofMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellofMusic.swift; sourceTree = "<group>"; };
 		E711719927C3A39E00563D1C /* CellOfFavouriteMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellOfFavouriteMusic.swift; sourceTree = "<group>"; };
+		E711719C27C3FFB400563D1C /* CellOfMusicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellOfMusicViewModel.swift; sourceTree = "<group>"; };
+		E711719F27C3FFD400563D1C /* CellOfFavouriteMusicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellOfFavouriteMusicViewModel.swift; sourceTree = "<group>"; };
 		E7611F7A27C119F100EB645A /* FirstProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7611F7D27C119F100EB645A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7611F7F27C119F100EB645A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +132,8 @@
 			children = (
 				E711719427C3783800563D1C /* CellofMusic.swift */,
 				E711719927C3A39E00563D1C /* CellOfFavouriteMusic.swift */,
+				E711719C27C3FFB400563D1C /* CellOfMusicViewModel.swift */,
+				E711719F27C3FFD400563D1C /* CellOfFavouriteMusicViewModel.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -256,8 +262,10 @@
 				E711719A27C3A39E00563D1C /* CellOfFavouriteMusic.swift in Sources */,
 				E7611F8227C119F100EB645A /* MainViewController.swift in Sources */,
 				E7611F9927C1273200EB645A /* SingUpViewController.swift in Sources */,
+				E711719D27C3FFB400563D1C /* CellOfMusicViewModel.swift in Sources */,
 				E7611F7E27C119F100EB645A /* AppDelegate.swift in Sources */,
 				E7611F9627C1205D00EB645A /* SingInViewController.swift in Sources */,
+				E71171A027C3FFD400563D1C /* CellOfFavouriteMusicViewModel.swift in Sources */,
 				E711718F27C3765500563D1C /* MusicViewController.swift in Sources */,
 				E7611F8027C119F100EB645A /* SceneDelegate.swift in Sources */,
 				E711718527C24E4800563D1C /* Constants.swift in Sources */,

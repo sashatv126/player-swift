@@ -9,12 +9,13 @@ import UIKit
 
 class SignInViewController: UIViewController {
 //MARK: -Views
+    private let cellIdentifier = "cells"
         
         
-        
-    lazy var tableView : UITableView = {
+   private lazy var tableView : UITableView = {
        let tableView = UITableView()
         tableView.backgroundColor = .white
+    tableView.register(CellOfFavouriteMusic.self, forCellReuseIdentifier: cellIdentifier)
         return tableView
     }()
     
