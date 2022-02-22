@@ -10,6 +10,7 @@ import UIKit
 enum Constants {
     enum Image {
         static let contentBlock = UIImage(named: "Content Block")
+        static let play = UIImage(named: "play")
     }
     enum Text {
         static let header = "Header"

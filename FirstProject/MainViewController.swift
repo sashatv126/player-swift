@@ -6,7 +6,6 @@
 //
 
 import UIKit
-
 import SnapKit
 
 class MainViewController: UIViewController {
@@ -105,7 +104,7 @@ class MainViewController: UIViewController {
         present(viewController, animated: true)
        
     }
-        //MARK: -Constraints
+//MARK: -Constraints
          private func setupConstraints() {
             scrollView.snp.makeConstraints{maker in
                 maker.left.equalTo(view).inset(0)

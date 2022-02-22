@@ -46,21 +46,21 @@ class CellOfFavouriteMusic : UITableViewCell {
     private func setupConstraints() {
         
         imageOfCover.snp.makeConstraints{ maker in
-            maker.width.equalTo(50)
-            maker.height.equalTo(50)
-            maker.right.equalTo(contentView).inset(309)
-            maker.bottom.equalTo(contentView).inset(27)
-            maker.top.equalTo(contentView).inset(16)
+            maker.width.equalTo(70)
+            maker.height.equalTo(70)
+            maker.right.equalTo(contentView).inset(280)
+            maker.bottom.equalTo(contentView).inset(10)
+            maker.top.equalTo(contentView).inset(10)
         }
         labelOfName.snp.makeConstraints{maker in
             maker.top.equalTo(contentView).inset(16)
-            maker.left.equalTo(imageOfCover).inset(76)
+            maker.left.equalTo(imageOfCover).inset(130)
             maker.width.equalTo(57)
             maker.height.equalTo(19)
         }
         labelOfArtist.snp.makeConstraints{maker in
             maker.top.equalTo(labelOfName).inset(27)
-            maker.left.equalTo(imageOfCover).inset(76)
+            maker.left.equalTo(imageOfCover).inset(130)
             maker.width.equalTo(269)
             maker.height.equalTo(34)
         }

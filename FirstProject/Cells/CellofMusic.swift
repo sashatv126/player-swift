@@ -9,6 +9,7 @@ import UIKit
 import SnapKit
 
 class CellofMusic: UITableViewCell {
+//MARK: -Views
     lazy var labelOfName : UILabel = {
        let label = UILabel()
         label.textColor = .black
@@ -24,6 +25,7 @@ class CellofMusic: UITableViewCell {
         image.contentMode = .scaleToFill
         return image
     }()
+//MARK: -Init
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.addSubview(imageOfCover)
@@ -39,6 +41,7 @@ class CellofMusic: UITableViewCell {
         labelOfArtist.text = viewModel.nameOfArtist
         imageOfCover.image = viewModel.cover
     }
+//MARK: -Constraints
     private func setupConstraints() {
         
         imageOfCover.snp.makeConstraints{ maker in
