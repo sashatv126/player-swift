@@ -9,6 +9,6 @@ import UIKit
 
 struct CellOfFavouriteMusicViewModel {
     let nameOfSong : String
-    let cover : UIImage
+    let cover : UIImage?
     let nameOfArtist : String
 }
