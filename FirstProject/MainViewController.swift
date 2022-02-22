@@ -94,7 +94,7 @@ class MainViewController: UIViewController {
         let tabBar = UITabBarController()
         naVCMusic.tabBarItem = UITabBarItem.init(tabBarSystemItem: .search, tag: 1)
         naVC.tabBarItem = UITabBarItem.init(tabBarSystemItem: .topRated , tag: 2)
-        naVCAbout.tabBarItem = UITabBarItem.init(tabBarSystemItem: .more , tag: 3)
+        naVCAbout.tabBarItem = UITabBarItem.init(tabBarSystemItem: .contacts , tag: 3)
         tabBar.viewControllers = [naVC,naVCMusic,naVCAbout ]
         tabBar.modalPresentationStyle = .fullScreen
          present(tabBar, animated: true)
