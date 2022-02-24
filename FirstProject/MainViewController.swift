@@ -88,17 +88,39 @@ class MainViewController: UIViewController {
         passwordTextField.delegate = self
     }
     @objc private func singInTapped() {
-        let naVC = UINavigationController(rootViewController: SignInViewController())
-        let naVCMusic = UINavigationController(rootViewController: MusicViewController())
-        let naVCAbout = UINavigationController(rootViewController: MoreViewController())
-        let tabBar = UITabBarController()
-        naVCMusic.tabBarItem = UITabBarItem.init(tabBarSystemItem: .search, tag: 1)
-        naVC.tabBarItem = UITabBarItem.init(tabBarSystemItem: .topRated , tag: 2)
-        naVCAbout.tabBarItem = UITabBarItem.init(tabBarSystemItem: .contacts , tag: 3)
-        tabBar.viewControllers = [naVC,naVCMusic,naVCAbout ]
-        tabBar.modalPresentationStyle = .fullScreen
-         present(tabBar, animated: true)
+        let email = emailTextField.text ?? ""
+        let password = passwordTextField.text ?? ""
+        let user = findUserInDataBase(mail: email)
+        if user == nil {
+            aleartController(title: "Error", message: "This email is not created", action: "OK")
+        }
+        else if password != user?.password {
+            aleartController(title: "Error", message: "password is not right", action: "OK")
+        }
+        else {
+            let naVC = UINavigationController(rootViewController: SignInViewController())
+            let naVCMusic = UINavigationController(rootViewController: MusicViewController())
+            let naVCAbout = UINavigationController(rootViewController: MoreViewController())
+            let tabBar = UITabBarController()
+            naVCMusic.tabBarItem = UITabBarItem.init(tabBarSystemItem: .search, tag: 1)
+            naVC.tabBarItem = UITabBarItem.init(tabBarSystemItem: .topRated , tag: 2)
+            naVCAbout.tabBarItem = UITabBarItem.init(tabBarSystemItem: .contacts , tag: 3)
+            tabBar.viewControllers = [naVC,naVCMusic,naVCAbout ]
+            tabBar.modalPresentationStyle = .fullScreen
+             present(tabBar, animated: true)
+        }
     }
+    private func findUserInDataBase (mail : String) -> User? {
+        let data = DataBase.shared.users
+        for user in data {
+            if user.email == mail {
+                return user
+            }
+        }
+        return nil
+    }
+    
+    
     @objc private func singUpTapped() {
         let viewController = SignUpViewController()
         present(viewController, animated: true)

@@ -45,14 +45,17 @@ class SignUpViewController: UIViewController {
     }()
     private let labelValidname : UILabel = {
        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 12, weight: .light)
         return label
     }()
     private let labelValidEmail : UILabel = {
        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 12, weight: .light)
         return label
     }()
     private let labelValidPassword : UILabel = {
        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 12, weight: .light)
         return label
     }()
     private let registerButton : UIButton = {
@@ -99,8 +102,31 @@ class SignUpViewController: UIViewController {
             repeatedPasswordTextField.delegate = self
         }
     @objc private func registerTapped() {
+        let username = userNameTextField.text ?? ""
+        let email = emailTextField.text ?? ""
+        let password = passwordTextField.text ?? ""
+        let repeatPassword = repeatedPasswordTextField.text ?? ""
+        
+        if username.isValid(validTypes: validName) && email.isValid(validTypes: validEmail) && password.isValid(validTypes: validPassword){
+            if password == repeatPassword {
+                DataBase.shared.saveUsers(username: username, email: email, password: password, repeatPassword: repeatPassword)
+                aleartController(title: "Sucsessful", message: "Thank you for registration",
+                                 action: "dismiss")
+            }
+            else {
+                aleartController(title: "Error", message: "Passwords are not the same ",
+                                 action: "OK")
+            }
+        }
+        else {
+            aleartController(title: "Error", message: "Fill all fields ",
+                             action: "OK")
+        }
+        
+        
+        
     }
-    private func setTextField(textField : UITextField,label : UILabel, validType : String.ValidTypes,validMessage : String, wrongMessage : String, string : String , range : NSRange) {
+    private func setTextField(textField : UITextField,label : UILabel? , validType : String.ValidTypes,validMessage : String, wrongMessage : String, string : String , range : NSRange) {
         let text = (textField.text ?? "") + string
         let result : String
         if range.length == 1 {
@@ -112,12 +138,14 @@ class SignUpViewController: UIViewController {
         }
         textField.text = result
         if result.isValid(validTypes: validType) {
-            label.text = validMessage
-            label.textColor = .green
+            if label != nil {
+                label!.text = validMessage
+                label!.textColor = .green
+            }
         }
-        else {
-            label.text = wrongMessage
-            label.textColor = .red
+        else if label != nil {
+            label!.text = wrongMessage
+            label!.textColor = .red
         }
     }
 //MARK: -Constraints
@@ -172,9 +200,16 @@ class SignUpViewController: UIViewController {
                                                     label: labelValidPassword,
                                                     validType: validPassword,
                                                     validMessage: "Valid password",
-                                                    wrongMessage: "min 8 characters",
+                                                    wrongMessage: "min 6 characters",
                                                     string: string,
                                                     range: range)
+            case repeatedPasswordTextField : setTextField(textField: textField,
+                                                          label: nil,
+                                                          validType: validPassword,
+                                                          validMessage: "",
+                                                          wrongMessage: "",
+                                                          string: string,
+                                                          range: range)
             default : break
             }
             return false
