@@ -18,6 +18,9 @@
 		E71171A027C3FFD400563D1C /* CellOfFavouriteMusicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E711719F27C3FFD400563D1C /* CellOfFavouriteMusicViewModel.swift */; };
 		E71171A327C4BF4700563D1C /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71171A227C4BF4700563D1C /* PlayViewController.swift */; };
 		E71171A627C5738F00563D1C /* ValidTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71171A527C5738F00563D1C /* ValidTypes.swift */; };
+		E71171AB27C64D0500563D1C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71171AA27C64D0400563D1C /* UserModel.swift */; };
+		E71171AE27C64D6B00563D1C /* UserDefaultsManager .swift in Sources */ = {isa = PBXBuildFile; fileRef = E71171AD27C64D6B00563D1C /* UserDefaultsManager .swift */; };
+		E71171B127C6676700563D1C /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71171B027C6676700563D1C /* AlertController.swift */; };
 		E7611F7E27C119F100EB645A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7611F7D27C119F100EB645A /* AppDelegate.swift */; };
 		E7611F8027C119F100EB645A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7611F7F27C119F100EB645A /* SceneDelegate.swift */; };
 		E7611F8227C119F100EB645A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7611F8127C119F100EB645A /* MainViewController.swift */; };
@@ -42,6 +45,9 @@
 		E711719F27C3FFD400563D1C /* CellOfFavouriteMusicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellOfFavouriteMusicViewModel.swift; sourceTree = "<group>"; };
 		E71171A227C4BF4700563D1C /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		E71171A527C5738F00563D1C /* ValidTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidTypes.swift; sourceTree = "<group>"; };
+		E71171AA27C64D0400563D1C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		E71171AD27C64D6B00563D1C /* UserDefaultsManager .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaultsManager .swift"; sourceTree = "<group>"; };
+		E71171B027C6676700563D1C /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		E7611F7A27C119F100EB645A /* FirstProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7611F7D27C119F100EB645A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7611F7F27C119F100EB645A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +98,22 @@
 			path = ConstantsANDErrors;
 			sourceTree = "<group>";
 		};
+		E71171A827C64CB900563D1C /* Models  */ = {
+			isa = PBXGroup;
+			children = (
+				E71171AA27C64D0400563D1C /* UserModel.swift */,
+			);
+			path = "Models ";
+			sourceTree = "<group>";
+		};
+		E71171A927C64CE200563D1C /* Services  */ = {
+			isa = PBXGroup;
+			children = (
+				E71171AD27C64D6B00563D1C /* UserDefaultsManager .swift */,
+			);
+			path = "Services ";
+			sourceTree = "<group>";
+		};
 		E7611F7127C119F100EB645A = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +145,8 @@
 				E711718E27C3765500563D1C /* MusicViewController.swift */,
 				E71171A227C4BF4700563D1C /* PlayViewController.swift */,
 				E711719127C3769A00563D1C /* MoreMeViewController.swift */,
+				E71171A827C64CB900563D1C /* Models  */,
+				E71171A927C64CE200563D1C /* Services  */,
 				E7611F9427C11D8C00EB645A /* Extension */,
 				E7611F8327C119F100EB645A /* Main.storyboard */,
 				E7611F8627C119F500EB645A /* Assets.xcassets */,
@@ -147,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				E71171A527C5738F00563D1C /* ValidTypes.swift */,
+				E71171B027C6676700563D1C /* AlertController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -270,11 +295,14 @@
 				E7611F9927C1273200EB645A /* SingUpViewController.swift in Sources */,
 				E711719D27C3FFB400563D1C /* CellOfMusicViewModel.swift in Sources */,
 				E7611F7E27C119F100EB645A /* AppDelegate.swift in Sources */,
+				E71171AE27C64D6B00563D1C /* UserDefaultsManager .swift in Sources */,
 				E71171A627C5738F00563D1C /* ValidTypes.swift in Sources */,
 				E7611F9627C1205D00EB645A /* SingInViewController.swift in Sources */,
 				E71171A027C3FFD400563D1C /* CellOfFavouriteMusicViewModel.swift in Sources */,
 				E711718F27C3765500563D1C /* MusicViewController.swift in Sources */,
+				E71171B127C6676700563D1C /* AlertController.swift in Sources */,
 				E7611F8027C119F100EB645A /* SceneDelegate.swift in Sources */,
+				E71171AB27C64D0500563D1C /* UserModel.swift in Sources */,
 				E711718527C24E4800563D1C /* Constants.swift in Sources */,
 				E711719227C3769A00563D1C /* MoreMeViewController.swift in Sources */,
 				E711719527C3783800563D1C /* CellofMusic.swift in Sources */,
