@@ -135,6 +135,8 @@
 		E7611F7C27C119F100EB645A /* FirstProject */ = {
 			isa = PBXGroup;
 			children = (
+				E7611F9427C11D8C00EB645A /* Extension */,
+				E71171A927C64CE200563D1C /* Services  */,
 				E711718727C24E6900563D1C /* ConstantsANDErrors */,
 				E7611F9327C11D7E00EB645A /* Cells */,
 				E7611F7D27C119F100EB645A /* AppDelegate.swift */,
@@ -146,8 +148,6 @@
 				E71171A227C4BF4700563D1C /* PlayViewController.swift */,
 				E711719127C3769A00563D1C /* MoreMeViewController.swift */,
 				E71171A827C64CB900563D1C /* Models  */,
-				E71171A927C64CE200563D1C /* Services  */,
-				E7611F9427C11D8C00EB645A /* Extension */,
 				E7611F8327C119F100EB645A /* Main.storyboard */,
 				E7611F8627C119F500EB645A /* Assets.xcassets */,
 				E7611F8827C119F500EB645A /* LaunchScreen.storyboard */,
