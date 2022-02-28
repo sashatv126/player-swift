@@ -15,7 +15,7 @@ class MoreViewController: UIViewController {
     lazy var labelOfemail : UILabel = {
         let label = UILabel()
          label.textColor = .black
-        label.text = "efowefjoiw"
+        label.text = "Sasha@gmail.com"
          label.numberOfLines = 0
          label.font = Constants.Fonts.font1
          return label
@@ -23,7 +23,7 @@ class MoreViewController: UIViewController {
     lazy var labelOfUser : UILabel = {
         let label = UILabel()
          label.textColor = .black
-        label.text = "efowefjoiw"
+        label.text = "sasha"
          label.numberOfLines = 0
          label.font = Constants.Fonts.font1
          return label
@@ -74,5 +74,4 @@ class MoreViewController: UIViewController {
         scrollView.addSubview(labelOfemail)
         scrollView.addSubview(buttonOfPlay)
     }
-    
 }

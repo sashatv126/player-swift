@@ -11,6 +11,7 @@ enum Constants {
     enum Image {
         static let contentBlock = UIImage(named: "Content Block")
         static let play = UIImage(named: "play")
+        static let pause = UIImage(named: "pause")
     }
     enum Text {
         static let header = "Header"
